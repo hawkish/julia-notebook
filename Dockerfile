@@ -43,6 +43,7 @@ USER $NB_UID
 RUN julia -e 'import Pkg; Pkg.update()' && \
     julia -e 'import Pkg; Pkg.add("Gadfly")' && \
     julia -e 'import Pkg; Pkg.add("RDatasets")' && \
+    julia -e 'import Pkg; Pkg.add("Plots")' && \
     julia -e 'import Pkg; Pkg.add("IJulia")' && \
     # Precompile Julia packages \
     julia -e 'using IJulia' && \
